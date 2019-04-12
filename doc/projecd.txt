@@ -1,0 +1,54 @@
+*projecd.txt* *projecd*  Maintain a list of projects and cd to them.
+
+Author:  Fabian Brosda 
+Repo:    https://github.com/fbrosda/vim-projecd
+
+Easy navigation between multiple projects. This plugin maintans a list list of
+projects in a simple text file and offers a custom 'cd' command to choose one
+from this list.
+
+Projects are identified either by a vcs system (the default ist git) or can be
+added manually with |:ProjeCd|.
+
+
+COMMANDS                                                *projecd-commands*
+
+                                                        *projecd-:C*
+:C          Change the current directory, with tab completion from the saved
+            projects. If |fzf| is installed it will be used to filter the
+            results.
+
+                                                        *projecd-:ProjeCd*
+:ProjeCd    A replacement for |:cd|, which adds the target directory to the list
+            of projects. Usefull either to add directory not under version
+            conroll, or if |g:projecd_autosave| is disabled.
+
+
+CONFIGURATION                                           *projecd-configuration*
+
+*g:projecd_dbfile*
+
+The path to the project list file. The file contains the absolute paths to each
+project, separated by new lines.
+
+Default: <plugin-base-dir>/.data/projecd_list
+
+
+*g:projecd_rootcmd*
+
+The command to identify the project root, for a given file. '{}' is replaced
+with the path to the file visible in the current buffer.
+
+Currently only one vcs system at a time is supported.
+
+Default: 'git -C {} rev-parse --show-toplevel'
+
+
+*g:projecd_autosave*
+
+If enabled, the plugin automatically searches for the project root on |BufRead|.
+
+Default: 1
+
+
+vim:tw=78:et:ft=help:norl:
