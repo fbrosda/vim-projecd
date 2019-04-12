@@ -79,7 +79,7 @@ endif
 
 " Commands
 if exists('*fzf#run')
-    command D call s:cd_path_fzf()
+    command C call s:cd_path_fzf()
 else
     command -nargs=1 -complete=customlist,ProjeCdPathComplete D execute 'cd' fnameescape( <f-args> )
 endif
