@@ -78,10 +78,10 @@ endif
 
 
 " Commands
-if exists('*fzf#run')
-    command C call s:cd_path_fzf()
-else
-    command -nargs=1 -complete=customlist,ProjeCdPathComplete D execute 'cd' fnameescape( <f-args> )
-endif
-command -nargs=1 -complete=dir ProjCd call s:cd_add(<f-args>)
+" if exists('*fzf#run')
+    command ProjeCd call s:cd_path_fzf()
+" else
+"     command -nargs=1 -complete=customlist,ProjeCdPathComplete D execute 'cd' fnameescape( <f-args> )
+" endif
+command -nargs=1 -complete=dir ProjCdAdd call s:cd_add(<f-args>)
 

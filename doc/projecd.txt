@@ -14,14 +14,14 @@ added manually with |:ProjeCd|.
 COMMANDS                                                *projecd-commands*
 
                                                         *projecd-:C*
-:C          Change the current directory, with tab completion from the saved
-            projects. If |fzf| is installed it will be used to filter the
-            results.
+:ProjeCd        Change the current directory, with tab completion from the
+                saved projects. If |fzf| is installed it will be used to
+                filter the results.
 
                                                         *projecd-:ProjeCd*
-:ProjeCd    A replacement for |:cd|, which adds the target directory to the list
-            of projects. Useful either to add directory not under version
-            control, or if |g:projecd_autosave| is disabled.
+:ProjeCdAdd     A replacement for |:cd|, which adds the target directory to
+                the list of projects. Useful either to add directory not under
+                version control, or if |g:projecd_autosave| is disabled.
 
 
 CONFIGURATION                                           *projecd-configuration*
