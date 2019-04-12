@@ -3,11 +3,11 @@
 Author:  Fabian Brosda 
 Repo:    https://github.com/fbrosda/vim-projecd
 
-Easy navigation between multiple projects. This plugin maintans a list list of
+Easy navigation between multiple projects. This plugin maintains a list list of
 projects in a simple text file and offers a custom 'cd' command to choose one
 from this list.
 
-Projects are identified either by a vcs system (the default ist git) or can be
+Projects are identified either by a vcs system (the default is git) or can be
 added manually with |:ProjeCd|.
 
 
@@ -20,8 +20,8 @@ COMMANDS                                                *projecd-commands*
 
                                                         *projecd-:ProjeCd*
 :ProjeCd    A replacement for |:cd|, which adds the target directory to the list
-            of projects. Usefull either to add directory not under version
-            conroll, or if |g:projecd_autosave| is disabled.
+            of projects. Useful either to add directory not under version
+            control, or if |g:projecd_autosave| is disabled.
 
 
 CONFIGURATION                                           *projecd-configuration*

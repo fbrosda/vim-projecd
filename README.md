@@ -1,15 +1,22 @@
 # ProjeCD
 
 A small plugin, which stores a list of projects (aka git root directories) and
-lets you choose one of them with `:Cd` for fast context switching.
+lets you choose one of them with `:C` for fast context switching.
 
 If fzf is installed this will be used to narrow down the list of available
 projects.
 
-## TODOs
+The plugin is heavily inspired by projectile for emacs, but offers only
+functionality for a small and specific use case.
 
-- [X] Basic implementation
-- [X] Support other options then git rev-parse( basic support via command variable )
-- [X] Enable default vim autocompletion if fzf is not available
-- [ ] Write some documentation
-- [ ] Maybe move some stuff to autoload
+## Motivation
+
+Have an fast and simple mechanism to switch between different project context.
+With commands like `:e`, `:find` and `:grep` starting from the current directory
+by default, setting this to the project root, seems to be an unobtrusive way
+for achieving this.
+
+## Installation
+
+Use whatever plugin manager you prefer.
+
