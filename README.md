@@ -9,6 +9,7 @@ projects.
 ## TODOs
 
 - [X] Basic implementation
-- [ ] Support other options then git rev-parse
-- [ ] Enable default vim autocompletion if fzf is not available
-- [ ] Some more configuration options
+- [X] Support other options then git rev-parse( basic support via command variable )
+- [X] Enable default vim autocompletion if fzf is not available
+- [ ] Write some documentation
+- [ ] Maybe move some stuff to autoload
